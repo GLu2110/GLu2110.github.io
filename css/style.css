@@ -13,6 +13,37 @@
 }
 
 
+h1, h2, h3, h4, h5, h6 {
+	font: 700 40px/1.2 Raleway, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin: 5px 0 5px;
+	color: #222;
+}
+
+h2 {
+	font-size: 30px;
+	margin: 0 0 30px;
+}
+
+
+body {
+    font: 300 14px/1.8 'Raleway', sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    font-stretch: normal;
+    font-size: 14px;
+    line-height: 1.8;
+    font-family: Raleway, sans-serif;
+    color: #666;
+    overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
 
 .intro h1 {
 	font-style: normal;
@@ -40,6 +71,7 @@
 	background-size: cover;
 	padding: 0;
 }
+
 
 .home-overlay {
 	background-color: rgba(44, 62, 80, 0.3);
@@ -118,6 +150,7 @@
 	box-shadow    : 0 4px 5px -3px #ECECEC;
 	position      : relative;
 	background    : #FFFFFF;
+	font-family: Raleway, sans-serif;
 }
 
 .main-nav {
@@ -152,12 +185,88 @@
 
 
 .link {
+
 	transition         : all 0.3s ease-in-out;
 	-moz-transition    : all 0.3s ease-in-out;
 	-webkit-transition : all 0.3s ease-in-out;
 }
 
-.delay-13s {
-	animation-delay         : 1.3s;
-	-webkit-animation-delay : 1.3s;
+.delay-10s {
+	animation-delay         : 1.0s;
+	-webkit-animation-delay : 1.0s;
+}
+
+.delay-05s {
+	animation-delay         : 0.5s;
+	-webkit-animation-delay : 0.5s;
+}
+
+.delay-07s {
+	animation-delay         : 0.7s;
+	-webkit-animation-delay : 0.7s;
+}
+
+.res-nav_click {
+	line-height        : 38px;
+	font-family        : 'FontAwesome';
+	font-size          : 38px;
+	text-decoration    : none !important;
+	color              : #777777;
+	font-style         : normal;
+	display            : none;
+	width              : 42px;
+	height             : 27px;
+	margin             : 20px auto;
+	transition         : all 0.3s ease-in-out;
+	-moz-transition    : all 0.3s ease-in-out;
+	-webkit-transition : all 0.3s ease-in-out;
+}
+
+.res-nav_click:hover, .res-nav_click:active, .res-nav_click:focus {
+	color : #7CC576 !important;
+}
+
+.pfblock {
+    padding: 80px 0 100px;
+}
+
+.pfblock-header {
+	text-align: center;
+	margin: 0 0 60px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 60px;
+    margin-left: 0px;
+}
+
+.pfblock-header-left {
+	text-align: left;
+}
+
+.pfblock-header-left .pfblock-line {
+	width: inherit;
+	margin: 30px 0;
+}
+
+.pfblock-title{
+    font-weight: 800;
+}
+
+
+.pfblock-bio {
+	font-family: Raleway, "Times New Roman", Times, sans-serif;
+	font-style: normal;
+	font-size: 18px;
+	text-align: justify;
+}
+
+.pfblock-line {
+	background: rgba(135, 135, 135, 0.5);
+	width: 100px;
+	height: 1px;
+	margin: 30px auto;
+}
+
+.pfblock-icon {
+	font-size: 32px;
 }
