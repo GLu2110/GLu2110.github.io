@@ -19,6 +19,8 @@
 
 
 $(document).ready(function () {
+ 
+
  wow = new WOW({
 			mobile: false
 		});
@@ -32,7 +34,15 @@ $(document).ready(function () {
 
 });
 		
-	
+	$( document ).ready(function() {
+    var heights = $(".well").map(function() {
+        return $(this).height();
+    }).get(),
+
+    maxHeight = Math.max.apply(null, heights);
+
+    $(".well").height(maxHeight);
+});
 
 
 })(jQuery);
