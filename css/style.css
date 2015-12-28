@@ -1,0 +1,163 @@
+.intro {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	text-align: center;
+	-webkit-transform: translate(0%, -50%);
+	-moz-transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%);
+	-o-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+	padding: 0 15px;
+}
+
+
+
+.intro h1 {
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 800;
+	font-stretch: normal;
+	font-size: 40px;
+	line-height: 1.2;
+	font-family: Raleway, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin: 5px 0 5px;
+	color:#fff;
+}
+
+#home {
+	background: url(../img/healthcare.jpg) ;
+	background-color: #222;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 0;
+}
+
+.home-overlay {
+	background-color: rgba(44, 62, 80, 0.3);
+	background-image: url("http://leahxu.com/assets/images/pattern.png");
+	background-repeat: repeat;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+
+.start {
+	font-weight: 300;
+	font-family: Raleway, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	text-transform: none;
+	margin: 15px 0;
+	margin-top: 15px;
+	margin-right: 0px;
+	margin-bottom: 15px;
+	margin-left: 0px;
+	line-height: 1.8;
+	color: #fff
+}
+
+.scroll-down {
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	margin-left: -15px;
+	display: block;
+	z-index: 10;
+	text-align: center;
+}
+
+.scroll-down span{
+	position: relative;
+	color: #fff;
+	-webkit-animation-name: drop;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;
+	animation-name: drop;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+}
+
+
+@-webkit-keyframes drop	{
+	0%   { top:0px;  opacity: 0;}
+	30%  { top:10px; opacity: 1;}
+	100% { top:25px; opacity: 0;}
+}
+
+@keyframes drop	{
+	0%   { top:0px;  opacity: 0;}
+	30%  { top:10px; opacity: 1;}
+	100% { top:25px; opacity: 0;}
+}
+.main-nav-outer {
+	padding       : 0px;
+	border-bottom : 1px solid #DDDDDD;
+	box-shadow    : 0 4px 5px -3px #ECECEC;
+	position      : relative;
+	background    : #FFFFFF;
+}
+
+.main-nav {
+	text-align : center;
+	margin     : 10px 0 0px;
+	padding    : 0;
+	list-style : none;
+}
+
+.main-nav li {
+	display : inline;
+	margin  : 0 1px;
+}
+
+.main-nav li a {
+	display            : inline-block;
+	color              : #222222;
+	text-transform     : uppercase;
+	font-family		   : Raleway, sans-serif;
+	text-decoration    : none;
+	line-height        : 20px;
+	margin             : 17px 32px;
+	transition         : all 0.3s ease-in-out;
+	-moz-transition    : all 0.3s ease-in-out;
+	-webkit-transition : all 0.3s ease-in-out;
+}
+
+.main-nav li a:hover {
+	text-decoration : none;
+	color           : #7CC576;
+}
+
+
+.link {
+	transition         : all 0.3s ease-in-out;
+	-moz-transition    : all 0.3s ease-in-out;
+	-webkit-transition : all 0.3s ease-in-out;
+}
+
+.delay-13s {
+	animation-delay         : 1.3s;
+	-webkit-animation-delay : 1.3s;
+}
