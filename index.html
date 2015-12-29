@@ -15,7 +15,7 @@
 </head>
 <body>
 	<div style="overflow:hidden;">
-		<section id="home" class="pfblock-image screen-height">
+		<section id="home" class="screen-height">
 			<div class="home-overlay"></div>
 			<div class="intro">		
 				<h1 class="animated fadeInUp delay-05s">Gabriel Lu</h1>
@@ -52,16 +52,16 @@
 	</div>
 </nav>
 
-<section id="about" class="pfblock"><!--main-section-start-->
+<section id="about" class="block"><!--main-section-start-->
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6 col-sm-offset-3">
-				<div class="pfblock-header">
-					<h2 class="pfblock-title">About</h2>
-					<div class="pfblock-line"></div>
+				<div class="block-header">
+					<h2 class="block-title">About</h2>
+					<hr>
 					<img class="img-circle left-block wow zoomIn animated" src="img/gabriel.jpg" style="visibility: visible; animation-name: zoomIn;">
 					<p></p>
-					<div class="pfblock-bio">
+					<div class="block-bio">
 						My name is Gabriel and I'm a senior at Columbia University majoring in Computer Science and Biology. 
 					</div>
 				</div>
@@ -75,9 +75,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6 col-sm-offset-3">
-				<div class="pfblock-header">
-					<h2 class="pfblock-title">Research</h2>
-					<div class="pfblock-line"></div>
+				<div class="block-header">
+					<h2 class="block-title">Research</h2>
+					<hr>
 
 				</div>
 			</div>
@@ -89,7 +89,7 @@
 			<div class="col-xs-12 col-sm-4 col-md-4">
 				<a href="https://www.linkedin.com/in/gabriellu3">
 					<div class="grid wow zoomIn">
-						<figure class="effect-bubba well">
+						<figure class="entries well">
 							<img src="img/ms2.jpg" style="max-height:240px" alt="Multiple Sclerosis"/>
 							<figcaption>
 								<h2><span>Classifier for Multiple-Sclerosis</span></h2>
@@ -103,7 +103,7 @@
 			<div class="col-xs-12 col-sm-4 col-md-4">
 				<a href="https://www.linkedin.com/in/gabriellu3">
 					<div class="grid wow zoomIn">
-						<figure class="effect-bubba well">
+						<figure class="entries well">
 							<img src="img/vrc01_gp120.jpg" style="max-height:240px" alt="HIV Neutralization"/>
 							<figcaption>
 								<h2><span>Predication of HIV-1 Antibody Epitopes</span></h2>
@@ -117,7 +117,7 @@
 			<div class="col-xs-12 col-sm-4 col-md-4">
 				<a href="https://www.linkedin.com/in/gabriellu3">
 					<div class="grid wow zoomIn">
-						<figure class="effect-bubba well">
+						<figure class="entries well">
 							<img src="img/atherosclerosis.jpg" style="max-height:240px" alt="Atherosclerosis"/>
 							<figcaption>
 								<h2><span>Multi-Ethnic Study of Atherosclerosis</span></h2>
@@ -136,13 +136,13 @@
 
 </section>
 
-<section id="publications" class="pfblock"><!--main-section-start-->
+<section id="publications" class="block"><!--main-section-start-->
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6 col-sm-offset-3">
-				<div class="pfblock-header">
-					<h2 class="pfblock-title">Publications</h2>
-					<div class="pfblock-line"></div>
+				<div class="block-header">
+					<h2 class="block-title">Publications</h2>
+					<hr>
 
 				</div>
 			</div>
@@ -152,13 +152,13 @@
 </section>
 
 
-<section id="experience" class="pfblock"><!--main-section-start-->
+<section id="experience" class="block"><!--main-section-start-->
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6 col-sm-offset-3">
-				<div class="pfblock-header">
-					<h2 class="pfblock-title">Experience</h2>
-					<div class="pfblock-line"></div>
+				<div class="block-header">
+					<h2 class="block-title">Experience</h2>
+					<hr>
 
 				</div>
 			</div>
@@ -169,13 +169,13 @@
 
 
 
-<section id="other" class="pfblock"><!--main-section-start-->
+<section id="other" class="block"><!--main-section-start-->
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6 col-sm-offset-3">
-				<div class="pfblock-header">
-					<h2 class="pfblock-title">Personal</h2>
-					<div class="pfblock-line"></div>
+				<div class="block-header">
+					<h2 class="block-title">Personal</h2>
+					<hr>
 
 				</div>
 			</div>
@@ -192,7 +192,51 @@
 <script type="text/javascript" src="js/jquery.isotope.js"></script>
 <script type="text/javascript" src="js/wow.js"></script>
 <script type="text/javascript" src="js/classie.js"></script>
-<script src="js/custom.js"></script>
+
+<script>
+$(document).ready(function () {
+
+	$('a[href*=#]').bind("click", function(e){
+
+		var anchor = $(this);
+		$('html, body').stop().animate({
+			scrollTop: $(anchor.attr('href')).offset().top
+		}, 1000);
+		e.preventDefault();
+	});
+
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 100) {
+			$('.scroll-up').fadeIn();
+		} else {
+			$('.scroll-up').fadeOut();
+		}
+	});
+
+	wow = new WOW({
+		mobile: false
+	});
+	wow.init();
+
+	$(".screen-height").height($(window).height());
+
+	$(window).resize(function(){
+		$(".screen-height").height($(window).height());
+	});
+
+});
+
+$( document ).ready(function() {
+	var heights = $(".well").map(function() {
+		return $(this).height();
+	}).get(),
+
+	maxHeight = Math.max.apply(null, heights);
+
+	$(".well").height(maxHeight);
+});
+
+</script>
 </body>
 </html>
 

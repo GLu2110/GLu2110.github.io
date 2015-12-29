@@ -13,9 +13,8 @@
 }
 
 
-
 h1, h2, h3, h4, h5, h6 {
-	font: 700 40px/1.2 Raleway, sans-serif;
+	font: 700 40px/1.2 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin: 5px 0 5px;
@@ -24,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
 	font-size: 30px;
-	margin: 0 0 30px;
+	margin: 0 0 -10px;
 }
 
 
@@ -36,14 +35,14 @@ h2 {
 }
 
 body {
-    font: 300 14px/1.8 'Raleway', sans-serif;
+    font: 300 14px/1.8 'Montserrat', sans-serif;
     font-style: normal;
     font-variant: normal;
     font-weight: 300;
     font-stretch: normal;
     font-size: 14px;
     line-height: 1.8;
-    font-family: Raleway, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #666;
     overflow-x: hidden;
 }
@@ -60,7 +59,7 @@ img {
 	font-stretch: normal;
 	font-size: 40px;
 	line-height: 1.2;
-	font-family: Raleway, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin: 5px 0 5px;
@@ -96,10 +95,9 @@ img {
 
 .start {
 	font-weight: 300;
-	font-family: Raleway, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	font-style: normal;
-	text-transform: none;
 	margin: 15px 0;
 	margin-top: 15px;
 	margin-right: 0px;
@@ -217,7 +215,7 @@ img {
 
 .res-nav_click {
 	line-height        : 38px;
-	font-family        : 'FontAwesome';
+	font-family        : Raleway, sans-serif;
 	font-size          : 38px;
 	text-decoration    : none !important;
 	color              : #777777;
@@ -235,51 +233,32 @@ img {
 	color : #7CC576 !important;
 }
 
-.pfblock {
-    padding: 80px 0 100px;
+.block {
+    padding: 70px 0 100px;
 }
 
-.pfblock-header {
+.block-header {
 	text-align: center;
 	margin: 0 0 60px;
     margin-top: 0px;
     margin-right: 0px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     margin-left: 0px;
 }
 
-.pfblock-header-left {
-	text-align: left;
-}
 
-.pfblock-header-left .pfblock-line {
-	width: inherit;
-	margin: 30px 0;
-}
-
-.pfblock-title{
+.block-title{
     font-weight: 800;
+    opacity: 0.9;
 }
 
 
-.pfblock-bio {
-	font-family: Raleway, "Times New Roman", Times, sans-serif;
+.block-bio {
+	font-family: Raleway, 'Montserrat', Times, sans-serif;
 	font-style: normal;
 	font-size: 18px;
 	text-align: justify;
 }
-
-.pfblock-line {
-	background: rgba(135, 135, 135, 0.5);
-	width: 100px;
-	height: 1px;
-	margin: 30px auto;
-}
-
-.pfblock-icon {
-	font-size: 32px;
-}
-
 
 
 .grid {
@@ -369,75 +348,23 @@ img {
 }
 
 
-figure.effect-bubba {
+figure.entries {
 	background: #000000;
 }
 
-figure.effect-bubba img {
+figure.entries img {
 	opacity: 0.7;
-	-webkit-transition: opacity 0.35s;
-	transition: opacity 0.35s;
+	
 }
 
-figure.effect-bubba:hover img {
-	opacity: 0.4;
-}
-
-figure.effect-bubba figcaption::before,
-figure.effect-bubba figcaption::after {
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	bottom: 30px;
-	left: 30px;
-	content: '';
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-}
-
-figure.effect-bubba figcaption::before {
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
-	-webkit-transform: scale(0,1);
-	transform: scale(0,1);
-}
-
-figure.effect-bubba figcaption::after {
-	border-right: 1px solid #fff;
-	border-left: 1px solid #fff;
-	-webkit-transform: scale(1,0);
-	transform: scale(1,0);
-}
-
-figure.effect-bubba h2 {
+figure.entries h2 {
 	padding-top: 10%;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,-20px,0);
-	transform: translate3d(0,-20px,0);
     color: #fff;
 }
 
-figure.effect-bubba p {
+figure.entries p {
 	padding: 20px 2.5em;
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(0,20px,0);
-	transform: translate3d(0,20px,0);
-}
-
-figure.effect-bubba:hover figcaption::before,
-figure.effect-bubba:hover figcaption::after {
 	opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
+	
 }
-
-figure.effect-bubba:hover h2,
-figure.effect-bubba:hover p {
-	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
+hr { margin: 40px 0px; border-color: #727878; opacity: 0.5; filter:alpha(opacity=20); }
