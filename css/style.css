@@ -1,22 +1,16 @@
-.intro {
-	position: absolute;
-	width: 100%;
-	top: 50%;
-	left: 0;
-	text-align: center;
-	-webkit-transform: translate(0%, -50%);
-	-moz-transform: translate(0%, -50%);
-	-ms-transform: translate(0%, -50%);
-	-o-transform: translate(0%, -50%);
-	transform: translate(0%, -50%);
-	padding: 0 15px;
-}
 
-
-h1, h2, h3, h4, h5, h6 {
-	font: 700 40px/1.2 'Montserrat', sans-serif;
+h1, h2, h3, h4, h5 {
+	font: 700 20px 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 5px;
+	margin: 5px 0 5px;
+	color: #222;
+}
+
+h6{
+	font: 500 25px 'Montserrat', sans-serif;
+	text-transform: none;
+	letter-spacing: 3px;
 	margin: 5px 0 5px;
 	color: #222;
 }
@@ -27,24 +21,41 @@ h2 {
 }
 
 
-.row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
+figure.entries {
+	background: #000000;
 }
 
+figure.entries img {
+	opacity: 0.7;
+	width:100%;
+	height:100%;
+	
+}
+
+figure.entries h2 {
+	padding-top: 10%;
+	color: #fff;
+}
+
+figure.entries p {
+	padding: 20px 2.5em;
+	opacity: 1;
+	
+}
+hr { margin: 40px 0px; border-color: #727878; opacity: 0.5; filter:alpha(opacity=20); }
+
+
 body {
-    font: 300 14px/1.8 'Montserrat', sans-serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 300;
-    font-stretch: normal;
-    font-size: 14px;
-    line-height: 1.8;
-    font-family: 'Montserrat', sans-serif;
-    color: #666;
-    overflow-x: hidden;
+	font: 300 14px/1.8 'Montserrat', sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	font-stretch: normal;
+	font-size: 14px;
+	line-height: 1.8;
+	font-family: 'Montserrat', sans-serif;
+	color: #666;
+	overflow-x: hidden;
 }
 
 img {
@@ -64,6 +75,28 @@ img {
 	letter-spacing: 5px;
 	margin: 5px 0 5px;
 	color:#fff;
+}
+
+.intro {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	text-align: center;
+	-webkit-transform: translate(0%, -50%);
+	-moz-transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%);
+	-o-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+	padding: 0 15px;
+}
+
+
+.row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
 }
 
 #home {
@@ -189,7 +222,25 @@ img {
 	color           : #7CC576;
 }
 
+.res-nav_click {
+	line-height        : 38px;
+	font-family        : Raleway, sans-serif;
+	font-size          : 38px;
+	text-decoration    : none !important;
+	color              : #777777;
+	font-style         : normal;
+	display            : none;
+	width              : 42px;
+	height             : 27px;
+	margin             : 20px auto;
+	transition         : all 0.3s ease-in-out;
+	-moz-transition    : all 0.3s ease-in-out;
+	-webkit-transition : all 0.3s ease-in-out;
+}
 
+.res-nav_click:hover, .res-nav_click:active, .res-nav_click:focus {
+	color : #7CC576 !important;
+}
 
 .link {
 
@@ -213,43 +264,23 @@ img {
 	-webkit-animation-delay : 0.7s;
 }
 
-.res-nav_click {
-	line-height        : 38px;
-	font-family        : Raleway, sans-serif;
-	font-size          : 38px;
-	text-decoration    : none !important;
-	color              : #777777;
-	font-style         : normal;
-	display            : none;
-	width              : 42px;
-	height             : 27px;
-	margin             : 20px auto;
-	transition         : all 0.3s ease-in-out;
-	-moz-transition    : all 0.3s ease-in-out;
-	-webkit-transition : all 0.3s ease-in-out;
-}
-
-.res-nav_click:hover, .res-nav_click:active, .res-nav_click:focus {
-	color : #7CC576 !important;
-}
-
 .block {
-    padding: 70px 0 100px;
+	padding: 50px 0 60px;
 }
 
 .block-header {
 	text-align: center;
 	margin: 0 0 60px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 50px;
-    margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 50px;
+	margin-left: 0px;
 }
 
 
 .block-title{
-    font-weight: 800;
-    opacity: 0.9;
+	font-weight: 800;
+	opacity: 0.9;
 }
 
 
@@ -272,7 +303,7 @@ img {
 }
 
 .grid h2{
-    font-size: 20px;
+	font-size: 20px;
 }
 
 .grid figure {
@@ -283,7 +314,7 @@ img {
 	min-width: 100%;
 	max-width: 100%;
 	height: auto;
-	background: #3085a3;
+	background: black;
 	text-align: center;
 	cursor: pointer;
 }
@@ -346,27 +377,3 @@ img {
 	letter-spacing: 1px;
 	font-size: 64.5%;
 }
-
-
-figure.entries {
-	background: #000000;
-}
-
-figure.entries img {
-	opacity: 0.7;
-	width:100%;
-	height:100%;
-	
-}
-
-figure.entries h2 {
-	padding-top: 10%;
-    color: #fff;
-}
-
-figure.entries p {
-	padding: 20px 2.5em;
-	opacity: 1;
-	
-}
-hr { margin: 40px 0px; border-color: #727878; opacity: 0.5; filter:alpha(opacity=20); }
