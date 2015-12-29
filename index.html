@@ -376,6 +376,11 @@
 			<script>
 			$(document).ready(function () {
 
+				wow = new WOW({
+					mobile: false
+				});
+				wow.init();
+				
 				$('a[href*=#]').bind("click", function(e){
 
 					var anchor = $(this);
@@ -393,10 +398,7 @@
 					}
 				});
 
-				wow = new WOW({
-					mobile: false
-				});
-				wow.init();
+				
 
 				$(".screen-height").height($(window).height());
 
