@@ -1,5 +1,5 @@
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
 	font: 700 20px 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 5px;
@@ -13,6 +13,15 @@ h6{
 	letter-spacing: 3px;
 	margin: 5px 0 5px;
 	color: #222;
+}
+
+h5{
+	font: 100 15px 'Montserrat', sans-serif;
+	text-transform: none;
+	letter-spacing: 1px;
+	margin: 5px 0 5px;
+	color: #222;
+
 }
 
 h2 {
@@ -31,6 +40,13 @@ figure.entries img {
 	height:100%;
 	
 }
+
+
+
+img {
+	max-width : 100%;
+}
+
 
 figure.entries h2 {
 	padding-top: 10%;
@@ -58,10 +74,7 @@ body {
 	overflow-x: hidden;
 }
 
-img {
-	max-width: 100%;
-	max-height: 100%;
-}
+
 
 .intro h1 {
 	font-style: normal;
@@ -304,70 +317,6 @@ img {
 	font-size: 14px;
 }
 
-.grid {
-	position: relative;
-	clear: both;
-	margin: 0 auto;
-	padding: 1em 0 4em;
-	max-width: 100%;
-	list-style: none;
-	text-align: center;
-}
-
-.grid h2{
-	font-size: 20px;
-}
-
-.grid figure {
-	position: relative;
-	float: left;
-	overflow: hidden;
-	margin: 10px 1%;
-	min-width: 100%;
-	max-width: 100%;
-	height: auto;
-	background: black;
-	text-align: center;
-	cursor: pointer;
-}
-
-.grid figure img {
-	position: relative;
-	display: block;
-	min-height: auto;
-	max-width: 100%;
-	opacity: 0.5;
-}
-
-.grid figure figcaption {
-	padding: 2em;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 1.25em;
-}
-
-.grid figure figcaption,
-.grid figure figcaption > a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.grid figure h2 {
-	word-spacing: -0.15em;
-	font-weight: 300;
-}
-
-.grid figure h2 span {
-	font-weight: 800;
-}
-
-.grid figure p {
-	letter-spacing: 1px;
-	font-size: 64.5%;
-}
 
 
 #list2 { width:320px; }
@@ -375,3 +324,64 @@ img {
 #list2 ol li { }
 #list2 ol li p { padding:8px; font-style:normal; font-family:Raleway, 'Montserrat', Times, sans-serif; font-size:12px; color:black; border-left: 1px solid #999; }
 #list2 ol li p em { display:block; font-size:20px }
+
+
+
+.portfolioContainer, .skillsContainer, .skillsSubContainer {
+	margin       : 0 auto;
+	padding-left : 15px;
+	overflow: visible !important;
+}
+
+
+
+
+.portfolioContainer, .skillsContainer, .skillsSubContainer {
+	margin       : 0 auto;
+	padding-left : 15px;
+	overflow: visible !important;
+}
+
+.Portfolio-box {
+	text-align    : center;
+	margin-bottom : 30px;
+	height        : 350px;
+	width         : 350px;
+	/*overflow      : hidden;*/
+	float         : left;
+	padding       : 0;
+}
+
+.Portfolio-box img {
+	margin-bottom      : 25px;
+	transition         : all 0.3s ease-in-out;
+	-moz-transition    : all 0.3s ease-in-out;
+	-webkit-transition : all 0.3s ease-in-out;
+}
+
+/* no transition on .isotope container */
+
+.isotope .isotope-item {
+	/* change duration value to whatever you like */
+	-webkit-transition-duration : 0.6s;
+	-moz-transition-duration    : 0.6s;
+	transition-duration         : 0.6s;
+}
+
+.isotope .isotope-item {
+	-webkit-transition-property : -webkit-transform, opacity;
+	-moz-transition-property    : -moz-transform, opacity;
+	transition-property         : transform, opacity;
+}
+
+.main-section.padded {
+	padding-bottom : 60px;
+}
+
+
+.main-section.padded {
+	padding-bottom : 60px;
+}
+.portfolioContainer, .skillsContainer, .skillsSubContainer {
+	max-width : 1140px;
+}
