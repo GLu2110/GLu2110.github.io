@@ -171,7 +171,6 @@ img {
 	animation-play-state: running;
 }
 
-
 @-webkit-keyframes drop	{
 	0%   { top:0px;  opacity: 0;}
 	30%  { top:10px; opacity: 1;}
@@ -277,9 +276,12 @@ img {
 	margin-left: 0px;
 }
 
+.block-image {
+	padding: 0;
+}
 
 .block-title{
-	font-weight: 800;
+	font-weight: 700;
 	opacity: 0.9;
 }
 
@@ -292,14 +294,14 @@ img {
 }
 
 .block-text {
-    font-family: Raleway, 'Montserrat', Times, sans-serif;
-    font-style: normal;
-    font-size: 20px;
+	font-family: Raleway, 'Montserrat', Times, sans-serif;
+	font-style: normal;
+	font-size: 20px;
 }
 .block-textsmall {
-    font-family: Raleway, 'Montserrat', Times, sans-serif;
-    font-style: normal;
-    font-size: 14px;
+	font-family: Raleway, 'Montserrat', Times, sans-serif;
+	font-style: normal;
+	font-size: 14px;
 }
 
 .grid {
