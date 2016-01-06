@@ -315,6 +315,10 @@ body {
 	text-align: justify;
 }
 
+.block-gray {
+	background: #f5f5f5;
+}
+
 .block-text {
 	font-family: Raleway, 'Montserrat', Times, sans-serif;
 	font-style: normal;
@@ -323,9 +327,12 @@ body {
 .block-textsmall {
 	font-family: Raleway, 'Montserrat', Times, sans-serif;
 	font-style: normal;
-	font-size: 14px;
+	font-size: 15px;
 }
 
+.clearfix {
+	overflow: auto;
+}
 
 
 #list2 { width:320px; }
