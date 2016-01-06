@@ -221,7 +221,7 @@ body {
 	display            : inline-block;
 	color              : #222222;
 	text-transform     : uppercase;
-	font-family		   : Raleway, sans-serif;
+	font-family		   : Raleway, "Montserrat", sans-serif;
 	text-decoration    : none;
 	line-height        : 20px;
 	margin             : 17px 32px;
@@ -235,36 +235,11 @@ body {
 	color           : #7CC576;
 }
 
-.res-nav_click {
-	line-height        : 38px;
-	font-family        : Raleway, sans-serif;
-	font-size          : 38px;
-	text-decoration    : none !important;
-	color              : #777777;
-	font-style         : normal;
-	display            : none;
-	width              : 42px;
-	height             : 27px;
-	margin             : 20px auto;
-	transition         : all 0.3s ease-in-out;
-	-moz-transition    : all 0.3s ease-in-out;
-	-webkit-transition : all 0.3s ease-in-out;
-}
-
-.res-nav_click:hover, .res-nav_click:active, .res-nav_click:focus {
-	color : #7CC576 !important;
-}
-
 .link {
 
 	transition         : all 0.3s ease-in-out;
 	-moz-transition    : all 0.3s ease-in-out;
 	-webkit-transition : all 0.3s ease-in-out;
-}
-
-.delay-10s {
-	animation-delay         : 1.0s;
-	-webkit-animation-delay : 1.0s;
 }
 
 .delay-05s {
