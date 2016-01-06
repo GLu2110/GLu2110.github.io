@@ -313,12 +313,6 @@
 			</section>
 
 
-
-
-
-
-
-
 <!-- 
 
 				<section id="other" class="block">
@@ -438,15 +432,6 @@
 					colW = 375,
 					columns = null;
 
-					var $skillsCon = $('.skillsContainer'),
-					$scBody = $('body'),
-					scColW = 187,
-					scColumns = null;
-
-					var $skillsSubCon = $('.skillsSubContainer'),
-					$sscBody = $('body'),
-					sscColW = 187,
-					sscColumns = null;
 
 					$container.isotope({
             // disable window resizing
@@ -455,20 +440,7 @@
             	columnWidth: colW
             }
         });
-					$skillsCon.isotope({
-            // disable window resizing
-            resizable: true,
-            masonry: {
-            	columnWidth: scColW
-            }
-        });
-					$skillsSubCon.isotope({
-            // disable window resizing
-            resizable: true,
-            masonry: {
-            	columnWidth: sscColW
-            }
-        });
+					
 
 					$(window).smartresize(function () {
             // check if columns has changed
