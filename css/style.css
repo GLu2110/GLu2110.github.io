@@ -330,10 +330,6 @@ body {
 	font-size: 15px;
 }
 
-.clearfix {
-	overflow: auto;
-}
-
 
 #list2 { width:320px; }
 #list2 ol { font-style:italic; font-family:Georgia, Times, serif; font-size:24px; color:#bfe1f1;  }
@@ -342,17 +338,7 @@ body {
 #list2 ol li p em { display:block; font-size:20px }
 
 
-
-.portfolioContainer, .skillsContainer, .skillsSubContainer {
-	margin       : 0 auto;
-	padding-left : 15px;
-	overflow: visible !important;
-}
-
-
-
-
-.portfolioContainer, .skillsContainer, .skillsSubContainer {
+.portfolioContainer {
 	margin       : 0 auto;
 	padding-left : 15px;
 	overflow: visible !important;
@@ -363,7 +349,6 @@ body {
 	margin-bottom : 30px;
 	height        : 350px;
 	width         : 350px;
-	/*overflow      : hidden;*/
 	float         : left;
 	padding       : 0;
 }
@@ -398,7 +383,7 @@ body {
 .main-section.padded {
 	padding-bottom : 60px;
 }
-.portfolioContainer, .skillsContainer, .skillsSubContainer {
+.portfolioContainer {
 	max-width : 1140px;
 }
 
